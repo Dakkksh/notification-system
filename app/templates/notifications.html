@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>In-App Notifications</title>
+</head>
+<body>
+    <h1>Notifications Dashboard</h1>
+    <ul>
+    {% for notification in notifications %}
+        <li><strong>{{ notification.timestamp }}</strong>: {{ notification.message }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
